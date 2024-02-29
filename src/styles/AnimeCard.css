@@ -1,0 +1,41 @@
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 185px);
+    grid-gap: 25px 20px;
+    justify-content: space-between;
+}
+
+.anime-card {
+    width: 185px;
+}
+
+.anime-card > .cover {
+    background: rgba(221, 230, 238, .8);
+    border-radius: 4px;
+    box-shadow: 0 14px 30px rgba(103,132,187, .15), 0 4px 4px rgba(103,132,187, .05);
+    cursor: pointer;
+    display: inline-block;
+    height: 265px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.anime-card > .cover > img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    animation: fadeInOut .3s ease-in-out;
+    width: 100%;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
